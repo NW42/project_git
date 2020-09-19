@@ -4,7 +4,7 @@ interface
 
 uses
   Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
-  Dialogs, StdCtrls, ExtCtrls;
+  Dialogs, StdCtrls, ExtCtrls, unit2;
 
 type
   TForm1 = class(TForm)
@@ -29,6 +29,11 @@ implementation
 procedure TForm1.Button1Click(Sender: TObject);
 begin
 //    511
+  form2:= TForm2.Create(form1);
+  form2.Edit1.Text:= 'MASTERS';
+  form2.Caption:= 'MASTER FORM';
+  form2.ShowModal;
+  FreeAndNil(form2);
 end;
 
 end.
