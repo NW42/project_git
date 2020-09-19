@@ -36,9 +36,10 @@ end;
 procedure TForm1.Button2Click(Sender: TObject);
 begin
   form2:= TForm2.Create(form1);
-  form2.Show;
+  form2.Caption:= 'TESTING';
   form2.Memo1.Lines.Clear;
   form2.Memo1.Lines.Add('TESTING');
+  form2.Show;
 end;
 
 end.

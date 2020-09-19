@@ -39,7 +39,8 @@ begin
   form2.Caption:= 'TESTING';
   form2.Memo1.Lines.Clear;
   form2.Memo1.Lines.Add('TESTING');
-  form2.Show;
+  form2.ShowModal;
+  FreeAndNil(form2);
 end;
 
 end.
