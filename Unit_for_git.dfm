@@ -29,6 +29,15 @@ object Form1: TForm1
       TabOrder = 0
       OnClick = Button1Click
     end
+    object Button2: TButton
+      Left = 168
+      Top = 8
+      Width = 75
+      Height = 25
+      Caption = 'open two'
+      TabOrder = 1
+      OnClick = Button2Click
+    end
   end
   object Panel2: TPanel
     Left = 0
